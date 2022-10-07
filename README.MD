@@ -1,4 +1,4 @@
-<h1>Software Engineering 1 Project Documentation </h1>
+<h1>Getting Started </h1>
 
 Run pip install -r requirements.txt to install all python dependencies.
 
