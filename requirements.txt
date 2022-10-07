@@ -1,0 +1,10 @@
+spacy
+numpy
+requests
+flask
+flask_cors
+bs4
+requests_html
+keybert
+nltk
+gensim

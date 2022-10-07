@@ -8,10 +8,9 @@ from bs4 import BeautifulSoup
 import urllib.request
 from requests_html import HTMLSession
 from keybert import KeyBERT
-
 import nltk
-nltk.download('punkt')
 
+nltk.download('punkt')
 nlp = spacy.load("en_core_web_lg")
 
 
