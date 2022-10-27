@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  max-width: 100%;
+  align-items: center;
+}
+
+.navbar {
+  width: 1200px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: bisque; */
+}
+
+.logo {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+a:link {
+  text-decoration: none;
+  color: #14213D;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.navbar li {
+  display: flex;
+  flex-direction: row;
+}
+
+.get-started {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #FCA311;
+  width: 159px;
+  height: 40px;
+  border: none;
+  border-radius: 36px;
 }
 
-.App-link {
-  color: #61dafb;
+.get-started a:link {
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main {
+  width: 900px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: cadetblue; */
+}
+
+.slogan {
+  display: flex;
+  flex-direction:column;
+  justify-content:left;
+  line-height: 50px;
+  margin-top: 80px;
+}
+
+.slogan .get-started {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #14213D;
+}
+
+.alt-color {
+  color: #FCA311;
 }
