@@ -17,13 +17,13 @@
 .container {
   display: flex;
   flex-direction: column;
-  width: 1200px;
+  width: 1400px;
   max-width: 100%;
   align-items: center;
 }
 
 .navbar {
-  width: 1200px;
+  width: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: row;
@@ -38,17 +38,20 @@
   height: auto;
 }
 
-a {
+.links a:link, .links a:visited {
   text-decoration: none !important;
-}
-
-a:link {
-  text-decoration: none;
   color: #14213D;
-  padding: 20px;
+  transition: color 0.6s;
+  margin: 20px;
 }
 
-.navbar ul {
+.links a:hover {
+  transition: color 0.2s;
+  color:#FCA311;
+}
+
+.navbar ul,
+.left-side-navbar-links ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -57,7 +60,8 @@ a:link {
   margin-right: 20px;
 }
 
-.navbar li {
+.navbar li,
+.left-side-navbar-links li  {
   display: flex;
   flex-direction: row;
 }
@@ -77,12 +81,10 @@ a:link {
 
 .get-started a:link {
   color: #fff;
-  text-decoration: none;
 }
 
 .main {
-  width: 900px;
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -91,11 +93,17 @@ a:link {
 }
 
 .slogan {
-  display: flex;
+  flex: 1;
   flex-direction:column;
   justify-content:left;
   line-height: 50px;
   margin-top: 80px;
+}
+
+.splash-dashboard{
+  flex: 1;
+  margin-top: 80px;
+  overflow: visible;
 }
 
 .slogan .get-started {
@@ -104,51 +112,26 @@ a:link {
 
 h1 {
   color: #14213D;
+  font-size: 3em;
+  padding-bottom: 10px;
 }
 
 .alt-color {
   color: #FCA311;
 }
 
-.c-formContainer {
-  position: relative;
-  font-weight: 700;
+.slogan-paragraph-text{
+  font-size: 1.4em;
+  padding-left: 3px;
+  padding-bottom: 15px;
 }
 
-.c-formContainer, .c-form, .c-form__toggle {
-  width: 20em;
-  height: 6.25em;
-}
-
-.c-checkbox:checked + .c-formContainer .c-form {
-  width: 37.5em;
-}
-
-.c-form {
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.625em;
-  box-sizing: border-box;
-  box-shadow: 0 0.125em 0.3125em rgba(0, 0, 0, 0.3);
+.left-side-navbar{
   display: flex;
-  justify-content: center;
+  align-items: center;
 }
 
-.c-form, .c-form__toggle {
-  position: absolute;
-  border-radius: 6.25em;
-  background-color: #ffffff;
-  transition: 0.2s;
+.links li:hover{
+  color:#FCA311;
 }
 
-.c-formContainer, .c-form, .c-form__toggle {
-  width: 20em;
-  height: 6.25em;
-}
-
-.c-checkbox + .c-formContainer .c-form__input, .c-checkbox + .c-formContainer .c-form__buttonLabel {
-  transition: 0.2s 0.1s;
-  visibility: visible;
-  opacity: 1;
-  transform: scale(1);
-}
