@@ -8,25 +8,24 @@ import "./FeaturesStyles.css"
 const Features = () => {
   return (
     <div className="features">
-      <div>
-        <h1>One SEO tool.</h1>
-        <h1 className="alt-color">Everything you'll ever need</h1>
-        <div className="icon-wrapper">
-          <div className="icon">
-            <PersonalizationIcon />
-            <small className="text">Personalization</small>
-          </div>
-          <div className="icon">
-            <KeywordSearchIcon />
-            <small className="text">Keyword Search</small>
-          </div>
-          <div className="icon">
-            <SavedSearchesIcon />
-            <small className="text">Saved Searches</small>
-          </div>
+      <h1>One SEO tool.</h1>
+      <h1 className="alt-color">Everything you'll ever need</h1>
+      <div className="icon-wrapper">
+        <div className="icon">
+          <PersonalizationIcon />
+          <p className="small-text">Personalization</p>
+        </div>
+        <div className="icon">
+          <KeywordSearchIcon />
+          <p className="small-text">Keyword Search</p>
+        </div>
+        <div className="icon">
+          <SavedSearchesIcon />
+          <p className="small-text">Saved Searches</p>
         </div>
       </div>
-      {/* <KeywordSearch /> */}
+      <div className="horizontal-line"></div>
+      <KeywordSearch />
     </div>
   );
 };
