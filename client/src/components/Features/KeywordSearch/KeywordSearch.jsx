@@ -14,9 +14,6 @@ const KeywordSearch = () => {
           <li>Sort keywords by their significance</li>
           <li>Find where those keywords are being used</li>
         </ul>
-        {/* <p>Automatically find keywords</p>
-        <p>Sort keywords by their significance</p>
-        <p>Find where those keywords are being used</p> */}
       </div>
     </div>
   );
