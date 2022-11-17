@@ -33,61 +33,61 @@ const Loader = () => {
     <div class="loader-component-container">
       <div class="loader-container">
         <div class="left">
-          <div class="uno">
-            <div class="uno">
-              <div class="uno">
-                <div class="uno"></div>
+          <div class="first">
+            <div class="first">
+              <div class="first">
+                <div class="first"></div>
               </div>
             </div>
           </div>
-          <div class="dos">
-            <div class="dos">
-              <div class="dos">
-                <div class="dos"></div>
+          <div class="second">
+            <div class="second">
+              <div class="second">
+                <div class="second"></div>
               </div>
             </div>
           </div>
-          <div class="tres">
-            <div class="tres">
-              <div class="tres">
-                <div class="tres"></div>
+          <div class="third">
+            <div class="third">
+              <div class="third">
+                <div class="third"></div>
               </div>
             </div>
           </div>
-          <div class="cuatro">
-            <div class="cuatro">
-              <div class="cuatro">
-                <div class="cuatro"></div>
+          <div class="fourth">
+            <div class="fourth">
+              <div class="fourth">
+                <div class="fourth"></div>
               </div>
             </div>
           </div>
         </div>
         <div class="right">
-          <div class="uno">
-            <div class="uno">
-              <div class="uno">
-                <div class="uno"></div>
+          <div class="first">
+            <div class="first">
+              <div class="first">
+                <div class="first"></div>
               </div>
             </div>
           </div>
-          <div class="dos">
-            <div class="dos">
-              <div class="dos">
-                <div class="dos"></div>
+          <div class="second">
+            <div class="second">
+              <div class="second">
+                <div class="second"></div>
               </div>
             </div>
           </div>
-          <div class="tres">
-            <div class="tres">
-              <div class="tres">
-                <div class="tres"></div>
+          <div class="third">
+            <div class="third">
+              <div class="third">
+                <div class="third"></div>
               </div>
             </div>
           </div>
-          <div class="cuatro">
-            <div class="cuatro">
-              <div class="cuatro">
-                <div class="cuatro"></div>
+          <div class="fourth">
+            <div class="fourth">
+              <div class="fourth">
+                <div class="fourth"></div>
               </div>
             </div>
           </div>

@@ -60,77 +60,77 @@ display: flex;
   transform: rotateY(180deg);
 }
 
-.uno,
-.dos,
-.tres,
-.cuatro {
+.first,
+.second,
+.third,
+.fourth {
   background: rgba(0, 0, 0, 0.5);
   position: relative;
   width: 25px;
   height: 3px;
 }
 
-.uno > .uno,
-.dos > .dos,
-.tres > .tres,
-.cuatro > .cuatro {
+.first > .first,
+.second > .second,
+.third > .third,
+.fourth > .fourth {
   transform-origin: 25px top;
   transform: rotate(-80deg) translateX(25px);
-  animation: seg 2.5s ease infinite;
+  animation: begin 2.5s ease infinite;
 }
 
-.uno > .uno > .uno,
-.dos > .dos > .dos,
-.tres > .tres > .tres,
-.cuatro > .cuatro > .cuatro {
+.first > .first > .first,
+.second > .second > .second,
+.third > .third > .third,
+.fourth > .fourth > .fourth {
   transform-origin: 25px top;
   transform: rotate(10deg) translateX(25px);
-  animation: seg 1.5s ease infinite;
+  animation: begin 1.5s ease infinite;
 }
 
-.right > .dos > .dos {
+.right > .second > .second {
   animation-delay: 200ms;
 }
 
-.dos > .dos {
+.second > .second {
   animation-delay: 400ms;
 }
 
-.dos > .dos > .dos {
+.second > .second > .second {
   animation-delay: 200ms;
 }
 
-.right >.tres > .tres {
+.right >.third > .third {
   animation-delay: 400ms;
 }
 
-.tres > .tres {
+.third > .third {
   animation-delay: 600ms;
 }
 
-.tres > .tres > .tres {
+.third > .third > .third {
   animation-delay: 300ms;
 }
 
-.right > .cuatro > .cuatro {
+.right > .fourth > .fourth {
   animation-delay: 100ms;
 }
 
-.cuatro > .cuatro {
+.fourth > .fourth {
   animation-delay: 800ms;
 }
 
-.cuatro > .cuatro > .cuatro {
+.fourth > .fourth > .fourth {
   animation-delay: 400ms;
 }
 
-@keyframes seg {
+@keyframes begin {
   50% {
     transform: rotate(55deg) translateX(25px);
   }
 }
 
-@keyframes inicio {
+@keyframes start {
   100% {
     top: 50%;
   }

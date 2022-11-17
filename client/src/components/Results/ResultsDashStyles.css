@@ -1,0 +1,37 @@
+.results-dash-container{
+    width: 100%;
+    margin-top: 80px;
+    color: #14213D;
+}
+
+.results-dash-title{
+    margin-bottom: 10px;
+}
+
+
+.results-dash-title span{
+    color: #FCA311;
+}
+
+.results-dash-title-line{
+    border: 1px solid #14213D;
+    margin-bottom: 25px;
+}
+
+.table-header-container{
+display: grid;
+grid-template-columns: 4.5fr 6fr 1.2fr;
+grid-template-rows: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+font-weight: bold;
+}
+
+.dash-result-confidence{
+    text-align: center;
+}
+
+.keyword-result-component:hover{
+    transform: scale(1.1);
+}
+
