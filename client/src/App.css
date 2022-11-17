@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  color: #333333;
 }
 
 .app {
@@ -86,10 +87,23 @@
 .main {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: cadetblue; */
+}
+
+.landing-page {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: cadetblue; */
 }
 
 .slogan {
@@ -134,4 +148,3 @@ h1 {
 .links li:hover{
   color:#FCA311;
 }
-
