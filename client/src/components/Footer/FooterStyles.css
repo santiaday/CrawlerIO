@@ -1,0 +1,40 @@
+.footer-container{
+    margin-top: 207px;
+    margin-bottom: 250px;
+    width: 100%;
+    height: auto;
+    background-image: url("footer-background.svg");
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-container h1{
+    margin-top: 240px;
+    font-size: 60px;
+}
+
+.footer-container h2{
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.footer-container h3{
+    margin-top: 45px;
+    font-size: 25px;
+}
+
+.footer-search-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 252px;
+}
+
+.footer-search-button-wrapper{
+    flex-grow: 0.4;
+}
+

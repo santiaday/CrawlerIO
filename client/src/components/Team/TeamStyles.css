@@ -1,0 +1,47 @@
+.team-container {
+    margin-top: 207px;
+    background: url("../../assets/team.svg");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.team-container-h1-first {
+color: white;
+margin-top: 90px;
+padding: 0px;
+}
+
+.team-container-h1-second {
+    color: orange;
+    padding: 0;
+}
+
+.team-container p {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    font-size: 22px;
+}
+
+.team-members-container {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.team-members-container-bottom {
+    margin-top: 50px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+
+

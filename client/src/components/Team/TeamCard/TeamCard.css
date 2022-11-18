@@ -1,0 +1,48 @@
+.team-member-card {
+    width: 200px;
+    height: 290px;
+    background-color: white;
+    display: grid;
+    border-radius: 10px;
+    grid-template-rows: repeat(2, 1fr);
+grid-template-columns: 1fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+margin: 0px 15px 0px 15px;
+transition: all 0.3s;
+}
+
+.team-member-card:hover{
+    transform: translateY(-5px);
+    transition: transform 0.3s;
+}
+
+.team-member-card-circle {
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    margin-top: 25px;
+       background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.team-member-card-circle-wrapper {
+    flex-basis: 100%;
+     display: flex;
+    justify-content: center;
+     align-items: center;
+    align-content: center;
+}
+
+.team-member-card-name {
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+}
+
+.team-member-card-name h2 {
+    font-size: 32px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}

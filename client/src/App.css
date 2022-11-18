@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  color: #333333;
 }
 
 .app {
@@ -86,10 +87,25 @@
 .main {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; */
+  /* background-color: cadetblue; */
+}
+
+.landing-page {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /* background-color: cadetblue; */
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .slogan {
@@ -135,3 +151,30 @@ h1 {
   color:#FCA311;
 }
 
+.header-search-button{
+  display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+}
+
+.header-search-button-wrapper{
+  flex-grow: 0.6;
+}
+
+@media only screen and (max-width: 1500px){
+  .landing-page{
+    flex-direction: column;
+  }
+  .slogan{
+    justify-content:center;
+    text-align: center;
+  }
+
+  .header-search-button{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+}

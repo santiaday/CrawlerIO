@@ -1,0 +1,39 @@
+{
+  "team": [
+    {
+      "firstName": "Santiago",
+      "lastName": "Aday",
+      "picture": "santi.svg"
+    },
+    {
+      "firstName": "Gelson",
+      "lastName": "Cardoso",
+      "picture": "./TeamPics/jr.svg"
+    },
+    {
+      "firstName": "Epson",
+      "lastName": "Fernandez",
+      "picture": "./TeamPics/epson.svg"
+    },
+    {
+      "firstName": "Jzon",
+      "lastName": "Livingston",
+      "picture": "./TeamPics/jzon.svg"
+    },
+    {
+      "firstName": "Alexis",
+      "lastName": "Loriga",
+      "picture": "./TeamPics/alexis.svg"
+    },
+    {
+      "firstName": "Ailany",
+      "lastName": "Rodriguez",
+      "picture": "./TeamPics/ailany.svg"
+    },
+    {
+      "firstName": "Charles",
+      "lastName": "Taylor",
+      "picture": "./TeamPics/santi.svg"
+    }
+  ]
+}
