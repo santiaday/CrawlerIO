@@ -1,18 +1,19 @@
 .team-container {
     margin-top: 207px;
-    background: url("../../assets/team.svg");
-    background-position: center center; 
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    width: 100%;
+    background: url("../../assets/team-bottom-left.svg"), url("../../assets/team-top-right.svg");
+    background-position: left bottom, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 195px 195px;
+    background-color: #14213D;
+    max-width: 1020px;
     border-radius: 25px;
     text-align: center;
 }
 
 .team-container-h1-first {
-color: white;
-margin-top: 90px;
-padding: 0px;
+    color: white;
+    margin-top: 90px;
+    padding: 0px;
 }
 
 .team-container-h1-second {
@@ -23,25 +24,26 @@ padding: 0px;
 .team-container p {
     color: white;
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+    padding: 0px 50px 0px 50px;
     font-size: 22px;
 }
 
 .team-members-container {
-    margin-top: 50px;
+    margin-bottom: 170px;
+    /* margin: 50px; */
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
 .team-members-container-bottom {
     margin-top: 50px;
     color: white;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 150px;
+    justify-content: center;
 }
-
-
-

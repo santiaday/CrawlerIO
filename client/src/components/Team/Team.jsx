@@ -25,12 +25,15 @@ const Team = () => {
         <TeamCard member={data.team[1]} pic={GelsonPic} />
         <TeamCard member={data.team[2]} pic={AilanyPic} />
         <TeamCard member={data.team[3]} pic={JzonPic} />
-      </div>
-      <div className="team-members-container-bottom">
         <TeamCard member={data.team[4]} pic={EpsonPic} />
         <TeamCard member={data.team[5]} pic={CharlesPic} />
         <TeamCard member={data.team[6]} pic={AlexisPic} />
       </div>
+      {/* <div className="team-members-container">
+        <TeamCard member={data.team[4]} pic={EpsonPic} />
+        <TeamCard member={data.team[5]} pic={CharlesPic} />
+        <TeamCard member={data.team[6]} pic={AlexisPic} />
+      </div> */}
     </div>
   );
 };
