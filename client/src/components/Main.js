@@ -6,7 +6,7 @@ import TechStack from "./TechStack/TechStack";
 import Team from "./Team/Team";
 import Footer from "./Footer/Footer";
 
-const Main = () => {
+const Main = ({ featuresRef, techStackRef, teamRef }) => {
   return (
     <div className="main">
       <div className="landing-page">
@@ -26,9 +26,9 @@ const Main = () => {
           <SplashPageDashboard />
         </div>
       </div>
-      <Features />
-      <TechStack />
-      <Team />
+      <Features featuresRef={featuresRef} />
+      <TechStack techStackRef={techStackRef} />
+      <Team teamRef={teamRef} />
       <Footer />
     </div>
   );

@@ -9,12 +9,12 @@ import EpsonPic from "./TeamPics/epson.svg";
 import CharlesPic from "./TeamPics/charles.svg";
 import AlexisPic from "./TeamPics/alexis.svg";
 
-const Team = () => {
+const Team = ({ teamRef }) => {
   var data = require("./teammates.json");
   console.log(data);
 
   return (
-    <div className="team-container">
+    <div className="team-container" ref={teamRef}>
       <h1 className="team-container-h1-first">The team behind</h1>
       <h1 className="team-container-h1-second">Crawler.io</h1>
       <p>
@@ -25,12 +25,15 @@ const Team = () => {
         <TeamCard member={data.team[1]} pic={GelsonPic} />
         <TeamCard member={data.team[2]} pic={AilanyPic} />
         <TeamCard member={data.team[3]} pic={JzonPic} />
-      </div>
-      <div className="team-members-container-bottom">
         <TeamCard member={data.team[4]} pic={EpsonPic} />
         <TeamCard member={data.team[5]} pic={CharlesPic} />
         <TeamCard member={data.team[6]} pic={AlexisPic} />
       </div>
+      {/* <div className="team-members-container">
+        <TeamCard member={data.team[4]} pic={EpsonPic} />
+        <TeamCard member={data.team[5]} pic={CharlesPic} />
+        <TeamCard member={data.team[6]} pic={AlexisPic} />
+      </div> */}
     </div>
   );
 };

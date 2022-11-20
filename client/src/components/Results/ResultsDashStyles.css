@@ -35,3 +35,40 @@ font-weight: bold;
     transform: scale(1.1);
 }
 
+.results-searchbar-container{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    width: 50%;
+}
+
+.results-searchbar-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.results-searchbar-wrapper h1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.results-dash-title-home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 a{
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+h3 a:hover{
+    color: #FCA311;
+    transition: all 0.2s;
+}

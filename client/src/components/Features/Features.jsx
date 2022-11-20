@@ -3,11 +3,11 @@ import { ReactComponent as KeywordSearchIcon } from "../../assets/keyword-search
 import { ReactComponent as SavedSearchesIcon } from "../../assets/saved-searches-icon.svg";
 
 import KeywordSearch from "./KeywordSearch/KeywordSearch.jsx";
-import "./FeaturesStyles.css"
+import "./FeaturesStyles.css";
 
-const Features = () => {
+const Features = ({ featuresRef }) => {
   return (
-    <div className="features">
+    <div ref={featuresRef} className="features">
       <h1>One SEO tool.</h1>
       <h1 className="alt-color">Everything you'll ever need</h1>
       <div className="icon-wrapper">

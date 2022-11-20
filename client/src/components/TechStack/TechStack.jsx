@@ -1,9 +1,9 @@
 import { ReactComponent as TechStackFigures } from "../../assets/tech-stack-figure.svg";
 import "./TechStackStyles.css";
 
-const Features = () => {
+const Features = ({ techStackRef }) => {
   return (
-    <div className="tech-stack">
+    <div className="tech-stack" ref={techStackRef}>
       <div className="tech-stack-wrapper">
         <div className="tech-figure-wrapper">
           <TechStackFigures />

@@ -14,7 +14,9 @@ const SearchBar = () => {
       state: {
         keyword: keyword,
       },
+      replace: true,
     });
+    navigate(0);
   };
 
   return (

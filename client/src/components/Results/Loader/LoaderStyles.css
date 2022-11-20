@@ -12,7 +12,7 @@ display: flex;
 
 .loader-container {
   position: absolute;
-  top: 40%;
+  top: 33%;
   left: 50.5%;
   margin-left: -20px;
   animation: float 3s ease-in-out infinite;
