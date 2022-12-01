@@ -137,7 +137,7 @@ def google_search(query):
     return parse_results(response)
 
 
-# subprocess.call("python -m spacy download en_core_web_sm",shell=True)
+subprocess.call("python -m spacy download en_core_web_sm",shell=True)
 
 app = Flask(__name__)
 CORS(app)
