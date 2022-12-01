@@ -146,11 +146,11 @@ CORS(app)
 nlp = spacy.load("en_core_web_sm")
 
 
-def extract_keywords(text, stopWords, source, sourceTitle, initial_keywords):
+def extract_keywords(text, source, sourceTitle, initial_keywords):
 
     kw_model = KeyBERT()
 
-    this_keywords = kw_model.extract_keywords(text, vectorizer=KeyphraseCountVectorizer(), stop_words=stopWords, use_mmr=True, diversity=0.2)
+    this_keywords = kw_model.extract_keywords(text, vectorizer=KeyphraseCountVectorizer(), use_mmr=True, diversity=0.2)
 
     this_final_keywords = []
 
@@ -164,10 +164,6 @@ def extract_keywords(text, stopWords, source, sourceTitle, initial_keywords):
 
 
 
-
-with open('SmartStoplist.txt') as f:
-    stop_words = f.read().splitlines() 
-
 @app.route('/extract-keywords')
 def main():
     seoKeywords = []
@@ -179,7 +175,7 @@ def main():
     
         text = beautifulsoup_extract_text_fallback(page.get("link"))
 
-        keywords = {'keywords' : extract_keywords(text, stop_words, page.get("link"), page.get("title"), initial_keywords)}
+        keywords = {'keywords' : extract_keywords(text, page.get("link"), page.get("title"), initial_keywords)}
 
         seoKeywords.append(keywords)
 

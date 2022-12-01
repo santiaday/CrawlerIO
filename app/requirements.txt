@@ -1,0 +1,13 @@
+beautifulsoup4
+Flask
+Flask_Cors
+gingerit
+googlesearch_python
+keybert
+keyphrase_vectorizers
+numpy
+pandas
+requests
+requests_html
+spacy
+yake
