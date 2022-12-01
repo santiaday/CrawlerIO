@@ -136,9 +136,8 @@ def google_search(query):
     response = get_results(query)
     return parse_results(response)
 
-    
 
-# subprocess.call("python -m spacy download en_core_web_sm",shell=True)
+subprocess.call("python -m spacy download en_core_web_sm",shell=True)
 
 app = Flask(__name__)
 CORS(app)
@@ -155,7 +154,7 @@ def extract_keywords(text, source, sourceTitle, initial_keywords):
     this_final_keywords = []
 
 
-    for i, keyword in enumerate(this_keywords):
+    for keyword in enumerate(this_keywords):
         if keyword[0] not in initial_keywords and len(keyword[0].split()) < 5:
             initial_keywords.append(keyword[0])
             this_final_keywords.append(keyword + (source,) + (sourceTitle,))
@@ -171,7 +170,6 @@ def main():
     initial_keywords = []
 
     for page in google_search(str(flask_request.args.get('search_term'))):
-    # for page in google_search("property management software"):
     
         text = beautifulsoup_extract_text_fallback(page.get("link"))
 
@@ -185,19 +183,4 @@ def main():
 
 
 
-    return(sorted(final_keywords, key = lambda x: x[1], reverse=True))
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
+    return jsonify(sorted(final_keywords, key = lambda x: x[1], reverse=True))
