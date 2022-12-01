@@ -6,6 +6,8 @@
 
 3. In one of the command prompts, cd into the "app" directory and run "pip install -r requirements.txt" to install all python dependencies.
 
+    -Run "python -m spacy download en_core_web_sm"
+
     -In the same command prompt, run "set FLASK_APP=app" and then "set FLASK_ENV=development"
     
     -After that, run "flask run"
