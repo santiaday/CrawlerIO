@@ -185,7 +185,7 @@ def main():
 
 
 
-    return(sorted(final_keywords, key = lambda x: x[1], reverse=True))
+    return jsonify(sorted(final_keywords, key = lambda x: x[1], reverse=True))
 
 
 
