@@ -1,5 +1,9 @@
 <h1>Getting Started </h1>
 
+Before following the steps below, make sure you have the latest versions of Python and Node.js installed:
+https://www.python.org/downloads/
+https://nodejs.org/en/download/
+
 1. Clone the repo to a local directory
 
 2. Open two different command prompts
