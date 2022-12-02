@@ -1,6 +1,6 @@
 <h1>Getting Started </h1>
 
-Before following the steps below, make sure you have the latest versions of Python (https://www.python.org/downloads/) and Node.js (https://nodejs.org/en/download/) installed:
+Before following the steps below, make sure you have the latest versions of Python (https://www.python.org/downloads/) and Node.js (https://nodejs.org/en/download/) installed.
 
 1. Clone the repo to a local directory
 
